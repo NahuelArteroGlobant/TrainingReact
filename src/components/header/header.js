@@ -4,8 +4,8 @@ import logo from "../../images/logo1.png";
 
 function Header() {
   return (
-    <div className="Home__header">
-      <img src={logo} alt="Logo " />
+    <div className="header">
+      <img className="header-avatar" src={logo} alt="Logo " />
       <h1>Diario Digital</h1>
     </div>
   );

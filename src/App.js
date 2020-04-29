@@ -1,24 +1,30 @@
 import React from "react";
 import "./App.scss";
 import Header from "./components/header/header";
-import logo2 from "../src/images/newsAvatar.png";
+import Footer from "./components/footer/footer";
+import Section from "./components/section/section";
+import Navbar from "./components/navbar/navbar";
+import Aside from "./components/aside/aside";
 
 function App() {
   return (
-    <div className="Home">
+    <div className="container">
+      <Navbar />
       <Header />
-
-      <div className="Home__section-name">
-        <img className="Home__avatar" src={logo2} alt="noticias" />
-        <h1>nombre del periodista</h1>
+      <div className="container-main">
+        <div>
+          <Section />
+        </div>
+        <div>
+          <Aside />
+        </div>
       </div>
       <div className="Home__section-info">
-        <p>diario en formato digital</p>
+        <p>Columnistas</p>
         <p>bla bla bla</p>
       </div>
-      <div className="Home__footer"> #NoticiasDeHoy</div>
+      <Footer />
     </div>
   );
 }
-
 export default App;
