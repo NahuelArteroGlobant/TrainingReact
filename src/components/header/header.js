@@ -4,10 +4,10 @@ import logo from "../../images/logo1.png";
 
 function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <img className="header-avatar" src={logo} alt="Logo " />
       <h1>Diario Digital</h1>
-    </div>
+    </header>
   );
 }
 

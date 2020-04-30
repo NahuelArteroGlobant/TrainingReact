@@ -45,22 +45,21 @@ class Navbar extends Component {
       },
     ];
     return (
-      <>
-        <div className="navbar">
-          <button onClick={this.Menu}>
-            <FaAlignRight />
-          </button>
-          <ul className={this.state.menu ? "links show-nav" : "links"}>
-            {li.map((objLink, i) => {
-              return (
-                <li key={i}>
-                  <a href={objLink.link}>{objLink.text}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </>
+      <nav className="navbar">
+        <button onClick={this.Menu}>
+          Menu
+          <FaAlignRight />
+        </button>
+        <ul className={this.state.menu ? "links show-nav" : "links"}>
+          {li.map((objLink, i) => {
+            return (
+              <li key={i}>
+                <a href={objLink.link}>{objLink.text}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     );
   }
 }

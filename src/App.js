@@ -12,12 +12,8 @@ function App() {
       <Navbar />
       <Header />
       <div className="container-main">
-        <div>
-          <Section />
-        </div>
-        <div>
-          <Aside />
-        </div>
+        <Section />
+        <Aside />
       </div>
       <div className="Home__section-info">
         <p>Columnistas</p>

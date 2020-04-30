@@ -9,34 +9,41 @@ function Aside() {
     {
       link: "/deportes/noticia1",
       text: "noticia de deportes",
-      img: <img className="aside-img" src={img2} alt="noticia de deporte" />,
+      src: img2,
+      alt: "noticia de deportes",
     },
     {
       link: "/politica/noticia1",
       text: "noticia de politica",
-      img: <img className="aside-img" src={img1} alt="noticia de politica" />,
+      src: img1,
+      alt: "noticia de politica",
     },
     {
       link: "/tecnologia/noticia1",
       text: "noticia de tecnologia",
-      img: <img className="aside-img" src={img3} alt="noticia de tecnologia" />,
+      src: img3,
+      alt: "noticia de tecnologia",
     },
   ];
   return (
-    <div className="aside">
-      {items.map((objLink, i) => {
-        return (
-          <li key={i}>
-            <a href={objLink.link}>
-              {" "}
-              {objLink.text}
-              {objLink.img}
-            </a>
-          </li>
-        );
-      })}
-      ;
-    </div>
+    <aside className="aside column">
+      <ul className="items">
+        {items.map((objLink, i) => {
+          return (
+            <li key={i}>
+              <a href={objLink.link}>
+                <h3>{objLink.text}</h3>
+                <img
+                  className="aside-img"
+                  src={objLink.src}
+                  alt={objLink.alt}
+                />
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </aside>
   );
 }
 
