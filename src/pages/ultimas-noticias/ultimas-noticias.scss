@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  align-items: flex-start;
+  grid-gap: 38px;
+  margin-top: 10%;
+  margin-left: 15%;
+
+  &__post {
+    cursor: pointer;
+    display: block;
+  }
+  &__post--image {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  &__post--overlay h4 p {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .post-list {
+    grid-template-columns: repeat(1, minmax(100px, 293px));
+    grid-gap: 3px;
+  }
+}

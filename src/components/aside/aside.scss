@@ -1,21 +1,31 @@
+@import "../../variables.scss";
+
 .aside {
-  display: flex;
-  flex-flow: column wrap;
+  grid-area: aside;
   justify-content: center;
   align-items: stretch;
-  background: red;
-  overflow: hidden;
-  padding: 30px;
-}
-.items li {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
-}
-.aside-img {
-  order: 1;
-  margin-right: 1rem;
-  width: auto;
-  height: 120px;
+  background: #cccccc;
+
+  .aside__items li {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    font-family: fontSections;
+    font-size: 1rem;
+
+    .aside__items--img {
+      order: 1;
+      margin-right: 1rem;
+      width: auto;
+      height: 150px;
+    }
+    h3::after {
+      content: " ultima noticia";
+      color: red;
+      background-color: #ffba10;
+      border-color: red;
+      border-style: dotted;
+    }
+  }
 }

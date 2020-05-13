@@ -1,18 +1,24 @@
+@import "../../variables.scss";
+
 .header {
+  grid-area: header;
   padding: 0.5rem;
   height: 100%;
-  background: #fe7e29;
+  background: $sectionColor;
   display: flex;
   justify-content: center;
-}
+  box-shadow: 0 8px 5px 0px rgba(0, 0, 0, 0.5);
 
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 3em;
-}
+  h1 {
+    font-family: $fontTitle;
+    font-size: 3em;
+    text-shadow: 3px 3px #99cccc;
+  }
 
-.header-avatar {
-  margin-right: 1rem;
-  width: 100px;
-  height: 100%;
+  &__avatar {
+    margin-right: 1rem;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
 }

@@ -1,26 +1,33 @@
 import React from "react";
 import "./App.scss";
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
-import Section from "./components/section/section";
-import Navbar from "./components/navbar/navbar";
-import Aside from "./components/aside/aside";
+import Home from "./pages/home/home";
+import UltimasNoticias from "./pages/ultimas-noticias/ultimas-noticias";
+import Deportes from "./pages/deportes/deportes";
+import Cultura from "./pages/cultura/cultura";
+import Politica from "./pages/politica/politica";
+import Sociedad from "./pages/sociedad/sociedad";
+import Turismo from "./pages/turismo/turismo";
+import Salud from "./pages/salud/salud";
+import Tecnologia from "./pages/tecnologia/tecnologia";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="container">
-      <Navbar />
-      <Header />
-      <div className="container-main">
-        <Section />
-        <Aside />
-      </div>
-      <div className="Home__section-info">
-        <p>Columnistas</p>
-        <p>bla bla bla</p>
-      </div>
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <div className="App">
+          <Route path="/" exact component={Home} />
+          <Route path="/ultimas-noticias" component={UltimasNoticias} />
+          <Route path="/deportes" component={Deportes} />
+          <Route path="/cultura" component={Cultura} />
+          <Route path="/politica" component={Politica} />
+          <Route path="/sociedad" component={Sociedad} />
+          <Route path="/turismo" component={Turismo} />
+          <Route path="/salud" component={Salud} />
+          <Route path="/tecnologia" component={Tecnologia} />
+        </div>
+      </Switch>
+    </Router>
   );
 }
 export default App;

@@ -12,6 +12,14 @@ class Navbar extends Component {
   render() {
     const li = [
       {
+        link: "/",
+        text: "Home",
+      },
+      {
+        link: "/ultimas-noticias/",
+        text: "Ultimas Noticias",
+      },
+      {
         link: "/deportes/",
         text: "Deportes",
       },
@@ -47,7 +55,6 @@ class Navbar extends Component {
     return (
       <nav className="navbar">
         <button onClick={this.Menu}>
-          Menu
           <FaAlignRight />
         </button>
         <ul className={this.state.menu ? "links show-nav" : "links"}>
@@ -58,6 +65,12 @@ class Navbar extends Component {
               </li>
             );
           })}
+          <input
+            id="search"
+            type="search"
+            placeholder="Busca en el sitio..."
+          ></input>
+          <button>Search</button>
         </ul>
       </nav>
     );

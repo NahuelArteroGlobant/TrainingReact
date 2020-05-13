@@ -1,0 +1,20 @@
+[
+  {
+    "link": "/deportes/noticia1",
+    "text": "noticia de deportes",
+    "src": "process.env.PUBLIC_URL + /images/tenis.jpg",
+    "alt": "noticia de deportes"
+  },
+  {
+    "link": "/politica/noticia1",
+    "text": "noticia de politica",
+    "src": "process.env.PUBLIC_URL + /images/Fernandez.jpeg",
+    "alt": "noticia de politica"
+  },
+  {
+    "link": "/tecnologia/noticia1",
+    "text": "noticia de tecnologia",
+    "src": "process.env.PUBLIC_URL + /images/tecnologia.jpg",
+    "alt": "noticia de tecnologia"
+  }
+]

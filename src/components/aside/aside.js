@@ -1,40 +1,37 @@
 import React from "react";
 import "./aside.scss";
-import img1 from "../../images/Fernandez.jpeg";
-import img2 from "../../images/tenis.jpg";
-import img3 from "../../images/tecnologia.jpg";
 
 function Aside() {
   const items = [
     {
       link: "/deportes/noticia1",
       text: "noticia de deportes",
-      src: img2,
+      src: process.env.PUBLIC_URL + "/images/tenis.jpg",
       alt: "noticia de deportes",
     },
     {
       link: "/politica/noticia1",
       text: "noticia de politica",
-      src: img1,
+      src: process.env.PUBLIC_URL + "/images/Fernandez.jpeg",
       alt: "noticia de politica",
     },
     {
       link: "/tecnologia/noticia1",
       text: "noticia de tecnologia",
-      src: img3,
+      src: process.env.PUBLIC_URL + "/images/tecnologia.jpg",
       alt: "noticia de tecnologia",
     },
   ];
   return (
-    <aside className="aside column">
-      <ul className="items">
+    <aside className="aside">
+      <ul className="aside__items">
         {items.map((objLink, i) => {
           return (
             <li key={i}>
               <a href={objLink.link}>
                 <h3>{objLink.text}</h3>
                 <img
-                  className="aside-img"
+                  className="aside__items--img"
                   src={objLink.src}
                   alt={objLink.alt}
                 />
@@ -46,5 +43,4 @@ function Aside() {
     </aside>
   );
 }
-
 export default Aside;
