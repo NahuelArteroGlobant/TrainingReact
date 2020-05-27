@@ -1,0 +1,25 @@
+// @import "../../variables.scss";
+
+// .container {
+//   display: grid;
+//   background-color: $sectionColor;
+//   grid-template-columns: minmax(auto, 1024px);
+//   row-gap: 5px;
+//   justify-content: center;
+//   grid-template-areas:
+//     "navbar navbar"
+//     "header header"
+//     "section section"
+//     "footer footer";
+// }
+
+// @media screen and (max-width: 768px) {
+//   .container {
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-areas:
+//       "navbar navbar"
+//       "header header"
+//       "section section"
+//       "footer footer";
+//   }
+// }

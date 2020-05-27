@@ -1,0 +1,29 @@
+.social {
+  position: fixed;
+  right: 0;
+  top: 350px;
+  z-index: 2000;
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social ul li img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  color: #fff;
+  background: transparent;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.social ul li img:hover {
+  padding: 10px 30px;
+  text-decoration: underline;
+}

@@ -1,0 +1,73 @@
+@import "../../variables.scss";
+
+.footer {
+  display: flex;
+  grid-area: footer;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  background-color: $sectionColor;
+
+  .footer__tittle {
+    font-family: $fontSections;
+  }
+
+  &__div-text h4 {
+    margin: 15px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  &__div {
+    display: flex;
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: $sectionColor;
+    border-width: 0;
+    font-size: 18px;
+    width: auto;
+    transition: all 0.5s;
+  }
+  &__btn span {
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  &__btn span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.5s;
+  }
+
+  &__btn:hover span {
+    padding-right: 25px;
+    border-color: $background;
+  }
+
+  &__btn:hover span:after {
+    opacity: 5;
+    right: 0;
+  }
+  &__avatar {
+    margin-left: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: block;
+    margin: 0.4em auto;
+  }
+}

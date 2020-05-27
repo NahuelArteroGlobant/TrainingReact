@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+
+.header {
+  grid-area: header;
+  margin-bottom: 10px;
+  height: 100%;
+  width: 100%;
+  background: $sectionColor;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 5px 0px rgba(0, 0, 0, 0.5);
+
+  h1 {
+    font-family: $fontTitle;
+    font-size: 3em;
+    text-shadow: 3px 3px #99cccc;
+  }
+
+  &__avatar {
+    margin-right: 1rem;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+}

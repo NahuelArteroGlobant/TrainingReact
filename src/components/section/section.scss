@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.section {
+  grid-area: section;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: $background;
+  overflow: hidden;
+  padding: 15px;
+
+  .slide-container {
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+
+  h3 {
+    font-family: $fontSections;
+    text-align: center;
+  }
+
+  .each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 400px;
+  }
+
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: transparent;
+    text-align: center;
+    color: red;
+  }
+
+  .each-fade {
+    display: flex;
+  }
+
+  .each-fade .image-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .each-fade .image-container img {
+    width: 100%;
+  }
+}
